@@ -31,55 +31,18 @@
     </script>
 
     <script>
-
-window.onload = function () {
-            let myform = document.getElementById('myForm');
-            // 이름 유효성 체크
-            myform.onsubmit = function () {
-                // alert('onsumbit함수 재정의');
-                let name = document.getElementById('name').value;
-                // 널체크 Empty체크
-                if (name.length < 2 || isEmpty(name)) {
-                    alert("이름을 다시 확인해주세요.");
-                    // 유효하지 않은 값
-                    return false; // 통신 안됨.(submit 중단)
+        function joinclick(){
+            var checkbox = document.getElementsByTagName('input');
+            for (var i = 0; i < checkbox.length; i++) {
+                if (checkbox[i].checked == false) {
+                    location="join2.html";
                 }
-                // 비밀번호 유효성 체크
-                let pass = document.getElementById('pass').value;
-                // 널체크 Empty체크
-                if (pass.length < 4 || isEmpty(name)) {
-                    alert("비밀번호을 다시 확인해주세요.");
-                    // 유효하지 않은 값
-                    return false; // 통신 안됨.(submit 중단)
+                else {
+                    location="join3.html";
                 }
-                let pass_check = document.getElementById('pass-check').value;
-                // 널체크 Empty체크
-                if (pass_check.length < 4 || isEmpty(name)) {
-                    alert("비밀번호 확인을 다시 확인해주세요.");
-                    // 유효하지 않은 값
-                    return false; // 통신 안됨.(submit 중단)
-                }
-                // 비번과 비번확인이 동일한가?
-                if (pass != pass_check) {
-                    alert("비밀번호와 비밀번호 확인이 틀립니다. 확인해주세요.");
-                    return false;
-                }
-                // 이름, 비번, 비번확인, 비번-비번확인 동일함.
             }
-        };
-
-        //문자열에 대한 Empty체크 함수
-        // true일때는 "", null, undefined, 0, NaN 이 있고
-        // false일때는 나머지인 경우
-        var isEmpty = function (value) {
-            if (value == "" || value == null || value == undefined
-                || (value != null && typeof value == "object" &&
-                    !Object.keys(value).length)) {
-                return true;
-            } else {
-                return false;
-            }
-        };
+            
+        }
 
     </script>
 
@@ -203,7 +166,7 @@ OOOOO(이하 '회사'라 합니다.)은 회원의 사생활 및 개인정보를 
             
         </div>
         <div class="text-center" style="margin-top: 10px;">
-            <a href="join3.html">
+            <a href="#" onclick="joinclick();">
                 <img src="../img/member/btn_join.gif" alt="회원가입"></img></a>
         </div>
     </div>
