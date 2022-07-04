@@ -1,0 +1,42 @@
+/* join 1 */
+.join_title1-1 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+.join_title1-2 {
+    text-align: center;
+    font-size: 12px;
+}
+.join_title2 {
+    border: 1px solid lightgray;
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px;
+}
+.join_title2 h3 {
+    font-size: 20px;
+}
+.join_title2 h5 {
+    font-size: 12px;
+}
+
+.join_body {
+    margin-top: 20px;
+    padding: 50px;
+    background-color: rgba(241, 241, 237, 0.849);
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.join_name input {
+    width: 300px;
+}
+.join_email input {
+    width: 300px;
+}
+/* join 2 */
+
