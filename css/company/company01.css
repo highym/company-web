@@ -1,0 +1,133 @@
+.navbar-nav-scroll{
+    max-height:75vh;
+    overflow-y:visible;
+    margin-left: auto;
+}
+.navbar-expand-lg{
+    margin-right: 2000px;
+}
+#comp .comtxt{
+    text-align: center;
+}
+.comtxt .txt1{
+    margin-top: 10px;
+    color: rgb(185, 183, 183);
+    font-size: 14px;
+}
+.imgc >img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.img02 > img{
+    width: 450px;
+    margin-top: 38px;
+}
+#aside{
+    width: 100%;
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+    
+}
+#aside >img{
+    width: 500px; 
+    height:auto;
+}
+#aside > .txt2{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.comlist{
+    margin-left: 20px;
+}
+.comlist >li>span{
+    color:red;
+}
+#vision{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+
+.vitxt >p{
+    font-size: 14px;
+    color: rgb(185, 183, 183);
+}
+.vitxt2{
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.vipng{
+    padding: 70px 70px 30px 70px;
+}
+.pt1{
+    display: inline-block;
+    width: 250px;
+    height: 350px;
+    background-color: rgb(236, 236, 236);
+    box-sizing: border-box;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.pt2{
+    display: inline-block;
+    width: 250px;
+    height: 350px;
+    background-color:  rgb(236, 236, 236);
+    box-sizing: border-box;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.pt3{
+    display: inline-block;
+    width: 250px;
+    height: 350px;
+    background-color:  rgb(236, 236, 236);
+    box-sizing: border-box;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.pt4{
+    display: inline-block;
+    width: 250px;
+    height: 350px;
+    background-color:  rgb(236, 236, 236);
+    box-sizing: border-box;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.hitxt{
+    display: block;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.hitxt >p{
+    font-size: 14px;
+    color: rgb(185, 183, 183);
+}
+.since1{
+    display: flex;
+    margin-left:110px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+.sintxt{
+    display: flex;
+    flex-flow:column;
+    text-align:justify;
+    margin-left:50px;
+    font-size: 16px;
+    
+}
