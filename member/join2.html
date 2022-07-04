@@ -1,61 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>회원가입2</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
 
-  <!-- Main CSS : Header, Main, Footer -->
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet" href="/css/common.css">
-  <link rel="stylesheet" href="/css/member/join.css">
+    <!-- Main CSS : Header, Main, Footer -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/member/join.css">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-  <!-- Bootstarp JS -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- Bootstarp JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
 
-  <script>
-    $(document).ready(function(){
-      $('#headerTop').load("/headerTop.html");
-      $('#header').load("/header.html");     
-      $('#footer').load("/footer.html");
-    });
-  </script>
+    <script>
+        $(document).ready(function () {
+            $('#headerTop').load("/headerTop.html");
+            $('#header').load("/header.html");
+            $('#footer').load("/footer.html");
+        });
+    </script>
+
+    <script>
+
+        window.onload = function () {
+            let myform = document.getElementById('myForm');
+            // 이름 유효성 체크
+            myform.onsubmit = function () {
+                // alert('onsumbit함수 재정의');
+                let name = document.getElementById('name').value;
+                // 널체크 Empty체크
+                if (name.length < 2 || isEmpty(name)) {
+                    alert("이름을 다시 확인해주세요.");
+                    // 유효하지 않은 값
+                    return false; // 통신 안됨.(submit 중단)
+                }
+                // 비밀번호 유효성 체크
+                let pass = document.getElementById('pass').value;
+                // 널체크 Empty체크
+                if (pass.length < 4 || isEmpty(name)) {
+                    alert("비밀번호을 다시 확인해주세요.");
+                    // 유효하지 않은 값
+                    return false; // 통신 안됨.(submit 중단)
+                }
+                let pass_check = document.getElementById('pass-check').value;
+                // 널체크 Empty체크
+                if (pass_check.length < 4 || isEmpty(name)) {
+                    alert("비밀번호 확인을 다시 확인해주세요.");
+                    // 유효하지 않은 값
+                    return false; // 통신 안됨.(submit 중단)
+                }
+                // 비번과 비번확인이 동일한가?
+                if (pass != pass_check) {
+                    alert("비밀번호와 비밀번호 확인이 틀립니다. 확인해주세요.");
+                    return false;
+                }
+                // 이름, 비번, 비번확인, 비번-비번확인 동일함.
+            }
+        };
+
+        //문자열에 대한 Empty체크 함수
+        // true일때는 "", null, undefined, 0, NaN 이 있고
+        // false일때는 나머지인 경우
+        var isEmpty = function (value) {
+            if (value == "" || value == null || value == undefined
+                || (value != null && typeof value == "object" &&
+                    !Object.keys(value).length)) {
+                return true;
+            } else {
+                return false;
+            }
+        };
+
+    </script>
 
 </head>
+
 <body>
-  <!-- 헤더 -->
-  <div id="headerTop"></div>
-  <div id="header" class="sticky-top"></div>
+    <!-- 헤더 -->
+    <div id="headerTop"></div>
+    <div id="header" class="sticky-top"></div>
 
-  <!-- 메인 -->
-  <!-- COMMON -->
-  <div class="commonSection1">
-    <div class="commonContent1">
-      <img src="/img/member/sub-visual02.jpg" 
-          style="width: 100%; height: 100%;">
-      <div class="commonContent2 text-center">
-        <div>
-          <h3>MEMBER</h3>
+    <!-- 메인 -->
+    <!-- COMMON -->
+    <div class="commonSection1">
+        <div class="commonContent1">
+            <img src="/img/member/sub-visual02.jpg" style="width: 100%; height: 100%;">
+            <div class="commonContent2 text-center">
+                <div>
+                    <h3>MEMBER</h3>
+                </div>
+                <div>
+                    <p><img src="/img/icon-home.png"> > 회원가입</p>
+                </div>
+            </div>
         </div>
-        <div>
-          <p><img src="/img/icon-home.png"> > 회원가입</p>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <!-- 메인 -->
-  <!-- 회원가입 -->
-  
+    <!-- 회원가입 -->
+    <div class="container">
+        <div class="join_title1">
+            <div class="join_title1-1">
+                <span>회원가입</span>
+            </div>
+            <div class="join_title1-2" style="color:rgb(180, 172, 172);">
+                <span>The design and maintenance are excellent.</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12" style="width:100%;">
+                <div class="text-left">
+                    이용약관
+                    <textarea style="width:100%; height:150px; font-size: 12px;">::: 개인정보취급방침 ::::
 
+OOOOO(이하 '회사'라 합니다.)은 회원의 사생활 및 개인정보를 적극적으로 보호하여 정보화 사회에서의 통신의 자유를 보장하고자 아래와 같이 개인정보취급방침을 명시하여 실천하고 있습니다.
 
+회사의 개인정보취급방침은 관련 법률 및 정부 지침의 변경과 회사의 내부 정책 변화에 따라 변경될 수 있으며, 수시로 방문하셔서 그 내용을 확인하여 주시기 바랍니다.
 
-  <!-- 푸터 -->
-  <div id="footer"></div>
+1. 개인정보의 수집 방법 및 범위
+회사는 서비스의 이용을 위하여 회원 가입 시에 회원 정보를 기입하도록 합니다. 회원가입 시에 받는 기본 필수 정보에는 성명, 주민등록번호, 사업자등록번호, 성별, 주소, 핸드폰번호, 전자우편 주소, 연락처가 있습니다. 이외에 보다 나은 서비스를 위해 선택 정보인 직업, 취미, 월소득 등을 수집할 수 있습니다.
+
+기타 서비스 이용과정 및 처리과정에서 생성되는 서비스 이용기록, 접속 로그, 쿠키, 접속 IP정보, 결재기록 등이 수집될 수 있으며, 추가적인 정보가 필요한 특정 서비스의 이용 시 추가 정보의 제공을 요청할 수 있습니다. 이 경우에도 기입하신 정보는 해당 서비스의 이용 및 사전에 밝힌 목적 이외에는 이용하지 않습니다.
+
+2. 개인정보의 수집 목적 및 이용
+회사가 개인정보를 수집하는 목적은 양질의 서비스 제공 및 회원 개개인의 기호와 필요에 따른 맞춤화된 서비스를 제공해드리기 위한 것입니다.
+
+회사는 서비스 제공에 따라 회원님의 동의 하에 광고성 정보를 전달할 수 있으며, 회원님 개인에 대한 정보를 바탕으로 좀 더 유용한 정보로서의 가치가 있는 광고를 선별적으로 전달됩니다. 성별, 연령별 기타 특정 조건의 집단에 대한 광고 게재 및 발송 시에도 회원의 개인정보는 광고를 의뢰한 개인이나 단체에 제공되지 않습니다.
+
+            </textarea>
+                </div>
+            </div>
+            <div class="col-sm-12" style="width:100%;">
+                <div class="text-left">
+                    개인정보보호정책
+                    <textarea style="width:100%; height:150px; font-size: 12px;">::: 개인정보취급방침 ::::
+
+OOOOO(이하 '회사'라 합니다.)은 회원의 사생활 및 개인정보를 적극적으로 보호하여 정보화 사회에서의 통신의 자유를 보장하고자 아래와 같이 개인정보취급방침을 명시하여 실천하고 있습니다.
+                        
+회사의 개인정보취급방침은 관련 법률 및 정부 지침의 변경과 회사의 내부 정책 변화에 따라 변경될 수 있으며, 수시로 방문하셔서 그 내용을 확인하여 주시기 바랍니다.
+                        
+1. 개인정보의 수집 방법 및 범위
+회사는 서비스의 이용을 위하여 회원 가입 시에 회원 정보를 기입하도록 합니다. 회원가입 시에 받는 기본 필수 정보에는 성명, 주민등록번호, 사업자등록번호, 성별, 주소, 핸드폰번호, 전자우편 주소, 연락처가 있습니다. 이외에 보다 나은 서비스를 위해 선택 정보인 직업, 취미, 월소득 등을 수집할 수 있습니다.
+                        
+기타 서비스 이용과정 및 처리과정에서 생성되는 서비스 이용기록, 접속 로그, 쿠키, 접속 IP정보, 결재기록 등이 수집될 수 있으며, 추가적인 정보가 필요한 특정 서비스의 이용 시 추가 정보의 제공을 요청할 수 있습니다. 이 경우에도 기입하신 정보는 해당 서비스의 이용 및 사전에 밝힌 목적 이외에는 이용하지 않습니다.
+                        
+2. 개인정보의 수집 목적 및 이용
+회사가 개인정보를 수집하는 목적은 양질의 서비스 제공 및 회원 개개인의 기호와 필요에 따른 맞춤화된 서비스를 제공해드리기 위한 것입니다.
+회사는 서비스 제공에 따라 회원님의 동의 하에 광고성 정보를 전달할 수 있으며, 회원님 개인에 대한 정보를 바탕으로 좀 더 유용한 정보로서의 가치가 있는 광고를 선별적으로 전달됩니다. 성별, 연령별 기타 특정 조건의 집단에 대한 광고 게재 및 발송 시에도 회원의 개인정보는 광고를 의뢰한 개인이나 단체에 제공되지 않습니다.                        
+            </textarea>
+                </div>
+            </div>
+
+            <div class="col-sm-12" style="width:100%;">
+                <div class="text-left">
+                    개인정보의 수집 및 이용목적
+                    <textarea style="width:100%; height:150px; font-size: 12px;">[제1장 총칙]
+
+▶ 개인정보의 수집 및 이용목적
+- 서비스 이용에 따른 본인식별, 실명확인, 가입의사 확인, 연령제한 서비스 이용
+- 고지사항 전달, 불만처리 의사소통 경로 확보, 물품배송 시 정확한 배송지 정보 확보
+- 신규 서비스 등 최신정보 안내 및 개인맞춤서비스 제공을 위한 자료
+- 기타 원활한 양질의 서비스 제공 등
+                        
+▶ 수집하는 개인정보의 항목
+- 이름, 이메일, 주민등록번호, 주소, 연락처, 핸드폰번호, 그 외 선택항목
+                        
+▶ 개인정보의 보유 및 이용기간
+- 원칙적으로 개인정보의 수집 또는 제공받은 목적 달성 시 지체 없이 파기합니다.
+- 다만, 원활한 서비스의 상담을 위해 상담 완료 후 내용을 3개월간 보유할 수 있으며
+전자상거래에서의 소비자보호에 관한 법률 등 타법률에 의해 보존할 필요가 있는 경우에는 일정기간 보존합니다.                        
+            </textarea>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 푸터 -->
+        <div id="footer"></div>
 
 </body>
+
 </html>
