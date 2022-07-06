@@ -208,6 +208,7 @@
   height: 42%;
   width: 84%;
   opacity: 0;
+
   /* 이미지변환시간 */
   transition: 0.5s ease; 
   background-color: black;
