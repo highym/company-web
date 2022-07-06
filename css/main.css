@@ -50,7 +50,7 @@
   color: #777777;
 } */
 .topMenu .home {
-  background-image: url('../img/home01.png');
+  background-image: url(/img/home01.png);
   background-repeat: no-repeat;
   background-position: -10% -50%;
 }
@@ -111,47 +111,18 @@
 
 
 /* 캐러셀 */
-.section1 {
-  position: relative;
-}
-.caption-text {
-  padding: 5px 10px;
-  position: absolute;
-  top: 30%;
-  /* right: 0%; */
-  color: white;
-}
-.caption-text h3 {
-  font-size: 5vw;
-}
-.carouselBtn {
-  width: 120px;
-  height: 30px;
-  font-size: 12px;
-  border: 1px solid rgb(56, 56, 145);
-  background-color: rgb(56, 56, 145);
-  color: white;
-}
-.carouselBtn:hover {
-  border: 1px solid black;
-  background-color: black;
-}
-.carouselBtn a {
-  color: white;
-}
-
-
 .carousel_text{
   text-align: center;
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
+
 .carousel_text a {
   color: white;
 }
 
-/* 섹션2 */
-/* 섹션2 */
 
+/* 섹션2 */
 .con_product {
   padding-top: 20px;
   text-align: center;
@@ -166,18 +137,20 @@
 }
 
 /* --------------------------------------- */
+
 .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 15px;
   right: 0;
-  height: 92%;
-  width: 92%;
+  height: 95%;
+  width: 95%;
   opacity: 0;
   /* 이미지변환시간 */
   transition: 0.5s ease; 
   background-color: black;
+  box-sizing: border-box;
 }
 .overlay:hover  {
   opacity: 0.7;
@@ -189,8 +162,8 @@
   bottom: 0;
   left: 15px;
   right: 0;
-  height: 42%;
-  width: 84%;
+  height: 45%;
+  width: 90%;
   opacity: 0;
   /* 이미지변환시간 */
   transition: 0.5s ease; 
@@ -199,17 +172,15 @@
 .overlay1:hover  {
   opacity: 0.7;
 }
-
 .overlay2 {
   position: absolute;
-  top: 179px;
+  top: 284px;
   bottom: 0;
   left: 15px;
   right: 0;
-  height: 42%;
-  width: 84%;
+  height: 45%;
+  width: 90%;
   opacity: 0;
-
   /* 이미지변환시간 */
   transition: 0.5s ease; 
   background-color: black;
@@ -217,10 +188,6 @@
 .overlay2:hover  {
   opacity: 0.7;
 }
-
-/***********************************/
-
-
 
 /* --------------------------------------- */
 .text {
@@ -252,7 +219,15 @@
 .business-img:hover {
   transform: scale(1.1);
 }
-
+.section5_right1{
+  position: absolute;
+}
+.section5_right2{
+  position: absolute;
+}
+.section5_right3{
+  position: absolute;
+}
 #section3 div {
   padding-top: 10px;
 }
@@ -290,11 +265,11 @@
   border: 1px solid rgb(227, 218, 218);
   padding-left: 50px;
 }
-/* #section5_right {
+.section5_right1 {
   display: flex;
   justify-content: center;
   flex-direction: row;
-} */
+}
 #section5 a {
   color: gray;
 }
@@ -313,7 +288,12 @@
   margin-right: 10px
 }
 
+#qna{
+  margin: 0;
+  width: 100%;
+  height: 10px;
 
+}
 
 /* 섹션6 */
 
@@ -321,7 +301,7 @@
 #footer {
   margin-top: 50px;
   height: auto;
-  background-color: gray;
+  background-color: #333;
 }
 .footer3 {
   padding-top: 20px;
@@ -338,6 +318,7 @@
   margin: 5px;
   vertical-align: middle;
   line-height: 50px;
+  
 }
 #footer a:link {
   color: white;
@@ -345,12 +326,171 @@
 #footer a:visited {
   color: white;
 }
+.footer2{
+  color: rgb(211, 211, 211);
+}
 
 /* 테블릿 */
 @media screen and (min-width: 768px) and (max-width: 959px) {
+  .con_product {
+    padding-top: 20px;
+    text-align: center;
+  }
+  #main_img {
+    margin-top: 30px;
+    background-color: rgb(243, 243, 243);
+  }
+  .main-img img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  /* --------------------------------------- */
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    height: 92%;
+    width: 92%;
+    opacity: 0;
+    /* 이미지변환시간 */
+    transition: 0.5s ease; 
+    background-color: black;
+  }
+  .overlay:hover  {
+    opacity: 0.7;
+  }
+  
+  .overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    height: 42%;
+    width: 84%;
+    opacity: 0;
+    /* 이미지변환시간 */
+    transition: 0.5s ease; 
+    background-color: black;
+  }
+  .overlay1:hover  {
+    opacity: 0.7;
+  }
+  .overlay2 {
+    position: absolute;
+    top: 180px;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    height: 42%;
+    width: 83%;
+    opacity: 0;
+    /* 이미지변환시간 */
+    transition: 0.5s ease; 
+    background-color: black;
+  }
+  .overlay2:hover  {
+    opacity: 0.7;
+  }
+  
+  /* --------------------------------------- */
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
 }
+
+
 /* 모바일 */
 @media screen and (max-width: 767px) and (orientation: portrait) {
+  .con_product {
+    padding-top: 20px;
+    text-align: center;
+  }
+  #main_img {
+    margin-top: 30px;
+    background-color: rgb(243, 243, 243);
+  }
+  .main-img img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  /* --------------------------------------- */
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    height: 86%;
+    width: 92%;
+    opacity: 0;
+    /* 이미지변환시간 */
+    transition: 0.5s ease; 
+    background-color: black;
+  }
+  .overlay:hover  {
+    opacity: 0.7;
+  }
+  
+  .overlay1 {
+    position: absolute;
+    top: -2px;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    height: 39%;
+    width: 83%;
+    opacity: 0;
+    /* 이미지변환시간 */
+    transition: 0.5s ease; 
+    background-color: black;
+  }
+  .overlay1:hover  {
+    opacity: 0.7;
+  }
+  .overlay2 {
+    position: absolute;
+    top: 176px;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    height: 39%;
+    width: 83%;
+    opacity: 0;
+    /* 이미지변환시간 */
+    transition: 0.5s ease; 
+    background-color: black;
+  }
+  .overlay2:hover  {
+    opacity: 0.7;
+  }
+  
+  /* --------------------------------------- */
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
   /* product */
   
   /* business */
