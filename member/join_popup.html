@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>회원가입</title>
+
+  <!-- Main CSS : Header, Main, Footer -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/member/join.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <!-- Bootstarp JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('#headerTop').load("../headerTop-sub.html");
+      $('#header').load("../header-sub.html");
+      $('#footer').load("../footer-sub.html");
+    });
+  </script>
+
+
+  <!-- 팝업창 닫히면서 회원가입 페이지로 이동 -->
+    <script>
+    function join2() {
+      opener.location.href="join2.html";
+      self.close();
+    }
+    </script>
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <!-- <div id="headerTop"></div>
+  <div id="header" class="sticky-top"></div> -->
+
+  <!-- 메인 -->
+  <!-- COMMON -->
+  <!-- <div class="commonSection1">
+    <div class="commonContent1">
+      <img src="../img/member/sub-visual02.jpg" 
+          style="width: 100%; height: 100%;">
+      <div class="commonContent2 text-center">
+        <div>
+          <h3>MEMBER</h3>
+        </div>
+        <div>
+          <p><img src="../img/icon-home.png"> > 회원가입</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- 메인 -->
+  <!-- 회원가입 -->
+  <div class="container">
+    <div style="background-color:black; color:white; height:50px; padding-top:12px; padding-left: 10px; font-size: 16px;">
+      <span>회원가입여부 및 실명확인</span>
+    </div>
+    <div style="background-color: rgb(241, 232, 215); margin-top:40px; height:80px; font-size: 12px; padding-top:20px; padding-left: 10px;">
+      <span style="color:rgb(255, 94, 0);"><b>등록된 회원이 아닙니다.</b></span>
+      <p>회원으로 가입하시면 보다 다양한 서비스를 받으실 수 있습니다.</p>
+    </div>
+    <div class="text-center" style="margin-top: 10px;">
+      <a href="join2.html" onclick="join2();">
+        <img src="../img/member/btn_join.gif" alt="회원가입"></img></a>
+    </div>
+
+    <div class="text-right" style="margin-top:50px;">
+      <!-- <input type="button" onclick="self.close();"> -->
+      <img src="../img/member/btn_close.gif" alt="닫기" onclick="self.close();" style="cursor:pointer;">
+    </div>
+
+  </div>
+
+
+
+  <!-- 푸터 -->
+  <!-- <div id="footer"></div> -->
+
+</body>
+
+</html>
