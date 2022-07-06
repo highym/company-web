@@ -22,16 +22,24 @@
     integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
     crossorigin="anonymous"></script>
 
-  <script>
-    // 코드중복을 피하기 위해 탑헤더/헤더/푸터를 만들어
-    // 재사용한다. jquery load함수
-    $(document).ready(function () {
-     $('#headerTop').load("headerTop-sub.html");
-      $('#header').load("header-sub.html");
-      $('#main').load("main.html");
-      $('#footer').load("footer-sub.html");
-    });
-  </script>
+    <script>
+      // 캐러셀 작동 JS
+      $( function () {
+        //1초 타임아웃함수
+        setTimeout(function (){
+          $('.carousel').carousel({ 
+            interval: 2000, //기본 5초 
+            keyboard: true, //키보드이벤트 설정
+            pause: 'hover',//마우스를 가져대면 자동 순환이 멈춘다.
+            wrap: true, //순환설정
+            touch: true //왼쪽 오른쪽 드래그 설정
+          }),
+          1000
+        });
+        
+      });
+      
+    </script>
 
 </head>
 
