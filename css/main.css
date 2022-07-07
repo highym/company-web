@@ -288,6 +288,18 @@
   justify-content: center;
   flex-direction: row;
 }
+.section5_right2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.section5_right3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+
 #section5 a {
   color: gray;
 }
