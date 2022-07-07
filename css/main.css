@@ -211,6 +211,7 @@
 }
 
 .business-cover {
+
   flex: 1 22%;
   overflow: hidden;
   position: relative;
@@ -218,8 +219,8 @@
 }
 
 .business-img img{
-  width: 100%;
-  height: auto;                
+  width: 100%;  
+  height: auto;              
 }
 
 .business-img:hover {
@@ -234,9 +235,7 @@
 .section5_right3{
   position: absolute;
 }
-#section3 div {
-  padding-top: 10px;
-}
+
 #section3 a {
   text-decoration: none;
   color: black;
