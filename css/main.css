@@ -209,15 +209,21 @@
 .business1 {
   text-align: center;
 }
-.business-img img{
-  width: 100%;
-}
 
-.business-img a{
+.business-cover {
+  flex: 1 22%;
+  overflow: hidden;
+  position: relative;
   transition: all 0.2s linear;
 }
+
+.business-img img{
+  width: 100%;
+  height: auto;                
+}
+
 .business-img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2, 1.2);
 }
 .section5_right1{
   position: absolute;
