@@ -65,17 +65,14 @@
     padding-right: 10px;
 }
 
-.vipng{
-    padding: 70px 70px 30px 70px;
-}
+
 #vibox{
     display: inline-flex;
     
 }
 .pt1{
-    display: inline-block;
-    width: 250px;
     height: 350px;
+    padding-top: 85px;
     background-color: rgb(236, 236, 236);
     box-sizing: border-box;
     margin-right: 10px;
@@ -83,9 +80,8 @@
     border: 1px solid rgb(180, 180, 180);
 }
 .pt2{
-    display: inline-block;
-    width: 250px;
     height: 350px;
+    padding-top: 85px;
     background-color:  rgb(236, 236, 236);
     box-sizing: border-box;
     margin-right: 10px;
@@ -93,9 +89,9 @@
     border: 1px solid rgb(180, 180, 180);
 }
 .pt3{
-    display: inline-block;
-    width: 250px;
     height: 350px;
+    padding-top: 85px;
+    padding: 80px 15px 50px 15px;
     background-color:  rgb(236, 236, 236);
     box-sizing: border-box;
     margin-right: 10px;
@@ -103,9 +99,9 @@
     border: 1px solid rgb(180, 180, 180);
 }
 .pt4{
-    display: inline-block;
-    width: 250px;
     height: 350px;
+    padding-top: 85px;
+    padding: 80px 15px 50px 15px;
     background-color:  rgb(236, 236, 236);
     box-sizing: border-box;
     margin-right: 10px;
@@ -164,25 +160,21 @@
         display: inline-block;
         padding: 10px;
     }
-    .col-3{
-        max-width:none;
-    }
-    .row{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
     .pt1{
         margin-bottom:40px;
+        padding: 50px 15px 50px 15px;
     }
     .pt2{
         margin-bottom:40px;
+        padding: 50px 15px 50px 15px;
     }
     .pt3{
         margin-bottom:40px;
+        padding: 50px 15px 50px 15px;
     }
     .pt4{
         margin-bottom:40px;
+        padding: 50px 15px 50px 15px;
     }
     .since1{
         margin: 0;
@@ -213,25 +205,22 @@
         display: inline-block;
         padding: 10px;
     }
-    .col-3{
-        max-width:none;
-    }
-    .row{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+    
     .pt1{
         margin-bottom:40px;
+        padding: 50px 15px 50px 15px;
     }
     .pt2{
         margin-bottom:40px;
+        padding: 50px 15px 50px 15px;
     }
     .pt3{
         margin-bottom:40px;
+        padding: 50px 15px 50px 15px;
     }
     .pt4{
         margin-bottom:40px;
+        padding: 50px 15px 50px 15px;
     }
     .since1{
         margin: 0;
