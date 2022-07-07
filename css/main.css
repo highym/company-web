@@ -460,8 +460,8 @@
     bottom: 0;
     left: 15px;
     right: 0;
-    height: 39%;
-    width: 89%;
+    /* height: 39%; */
+    /* width: 89%; */
     opacity: 0;
     /* 이미지변환시간 */
     transition: 0.5s ease; 
@@ -472,12 +472,12 @@
   }
   .overlay2 {
     position: absolute;
-    top: 240px;
+    top: 280px;
     bottom: 0;
     left: 15px;
     right: 0;
-    height: 39%;
-    width: 89%;
+    /* height: 39%;
+    width: 89%; */
     opacity: 0;
     /* 이미지변환시간 */
     transition: 0.5s ease; 
