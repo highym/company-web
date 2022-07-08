@@ -127,6 +127,10 @@
   position: relative;
 }
 
+.proimg{
+  width: 100%;
+}
+
 .probtn{
   border-top: 1px solid rgb(201, 201, 201) ;
 }
@@ -136,3 +140,18 @@
   padding: 5px 10px;
 }
 
+/* 테블릿 */
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  .proimg >img{
+    width: 100%;
+    
+  }
+}
+
+
+/* 모바일 */
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  .proimg >img{
+    width: 100%;
+  }
+}
