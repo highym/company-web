@@ -122,10 +122,9 @@
 
 .pro-ss{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   position: relative;
-  width: 80%;
 }
 
 .probtn{
