@@ -476,9 +476,9 @@
   
   .overlay1 {
     position: absolute;
-    top: -2px;
+    top: -4px;
     bottom: 0;
-    left: 15px;
+    left: 11px;
     right: 0;
     /* height: 39%; */
     /* width: 89%; */
@@ -492,9 +492,9 @@
   }
   .overlay2 {
     position: absolute;
-    top: 275px;
+    top: 238px;
     bottom: 0;
-    left: 15px;
+    left: 12px;
     right: 0;
     /* height: 39%;
     width: 89%; */
