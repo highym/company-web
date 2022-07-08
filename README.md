@@ -1,7 +1,7 @@
 # company-web
 
-<!-- 수정할 부분 -->
-main section3 overlay 픽셀별로 세밀한 조정
+
+main section3 overlay 픽셀별로 세밀한 조절 필요
 
 screenshot
 
