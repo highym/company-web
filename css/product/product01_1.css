@@ -96,6 +96,9 @@
  
   
 }
+#protxt{
+ margin-right: 55px;
+}
 .protxt-a{
   width: 200px;
   background-color: gainsboro;
@@ -111,18 +114,16 @@
 }
 .protxt-c{
  font-size: 3em;
- margin-left: 40px;
+
 }
-.protxt-d{
-  margin-left: 40px;
- }
  .proul{
-  margin-left: 40px;
+ 
   list-style: none;
  }
 
 .pro-ss{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
