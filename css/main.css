@@ -123,6 +123,7 @@
 
 
 /* 섹션2 */
+
 .con_product {
   padding-top: 20px;
   text-align: center;
@@ -491,7 +492,7 @@
   }
   .overlay2 {
     position: absolute;
-    top: 280px;
+    top: 275px;
     bottom: 0;
     left: 15px;
     right: 0;
